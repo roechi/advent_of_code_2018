@@ -1,13 +1,13 @@
 package main
 
 import (
+	"../utils"
+	"./idscanner"
 	"fmt"
-	"github.com/roechi/idscanner"
-	"github.com/roechi/utils"
 )
 
 func main() {
-	ids := utils.ReadLines("../puzzle_input.txt")
+	ids := utils.ReadLines("./day02/puzzle_input.txt")
 
 	checksum := idscanner.CalcChecksum(ids)
 

@@ -1,6 +1,6 @@
 package frequency
 
-import "github.com/roechi/set"
+import "../../utils"
 
 func ApplyFrequencyChanges(changes []int, baseFrequency int) int {
 	for _, c := range changes {
@@ -10,10 +10,8 @@ func ApplyFrequencyChanges(changes []int, baseFrequency int) int {
 	return baseFrequency
 }
 
-
-
 func FindFirstDuplicateFrequency(changes []int, baseFrequency int) int {
-	s := set.NewSet()
+	s := utils.NewSet()
 	idx := 0
 	currentFrequency := baseFrequency
 
@@ -32,6 +30,3 @@ func FindFirstDuplicateFrequency(changes []int, baseFrequency int) int {
 
 	return currentFrequency
 }
-
-
-

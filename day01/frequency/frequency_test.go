@@ -21,4 +21,3 @@ func Test_FindFirstDuplicateFrequency(t *testing.T) {
 
 	assert.Equal(t, want, got)
 }
-
